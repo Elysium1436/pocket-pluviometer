@@ -1,0 +1,23 @@
+[project]
+name = "projeto-balanco"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Elysium1436",email = "bryan.af7@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.115.6,<0.116.0)",
+    "uvicorn[standard] (>=0.34.0,<0.35.0)",
+    "sqlalchemy (>=2.0.37,<3.0.0)"
+]
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[tool.poetry]
+package-mode = false
